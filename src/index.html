@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-black">
+  <header class=" flex justify-around text-white min-h-16 items-center">
+    <!-- Esquerda -->
+    <div class="log flex">
+      <img class="px-1" src="img/more_horiz_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      <img src="img/keyboard_arrow_left_24dp_FFFFFF_FILL1_wght200_GRAD200_opsz24.svg" alt="">
+      <img src="img/keyboard_arrow_right_24dp_FFFFFF_FILL1_wght200_GRAD200_opsz24.svg" alt="">
+    </div>
+    <!-- Div Meio -->
+    <div class="flex gap-4 ">
+      <!-- SVG Casa -->
+      <div class="w-10 h-10 rounded-full bg-[#1F1F1F] flex items-center justify-center self-center">
+        <img src="img/home_24dp_FFFFFF_FILL1_wght200_GRAD200_opsz24.svg" class="w-6 h-6" alt="Casa">
+      </div>
+
+
+      <!-- Criar ul li com o do input -->
+
+      <div class="input gap-6 flex py-3 px-6 rounded-3xl" style="background: #1F1F1F;">
+        <ul class="flex w-auto gap-4">
+          <li><img src="img/search_26dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" alt=""></li>
+          <li class="w-96">
+            <input type="text" name="" placeholder="O que você quer procurar" class="w-96 border-none"
+              style="background:none;" id="">
+          </li>
+          <li><img src="img/shopping_basket_26dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" alt=""></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Div direita -->
+    <div class="flex">
+      <ul class="flex gap-3">
+        <li><img src="img/notifications_26dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+        <li><img src="img/groups_26dp_FFFFFF_FILL0_wght200_GRAD0_opsz24.svg" alt=""></li>
+        <li><img src="img/account_circle_26dp_FFFFFF_FILL1_wght200_GRAD200_opsz24.svg" alt=""></li>
+      </ul>
+    </div>
+    </ul>
+  </header>
+
+  <section class="top-2 px-2 gap-2 py-1" style="display: grid; grid-template-columns: 320px 1fr;">
+    <!-- Esquerda -->
+    <div style="background: #121212;" class="rounded-md ">
+      <!-- Menu Sua biblioteca e criar -->
+      <div class="menu flex items-center rounded py-3 gap-6">
+        <!-- sua biblioteca -->
+        <div class="flex gap-2 px-4">
+          <img src="img/Library.svg" alt="" style="width: 22px;">
+          <h2 style="color: #B3B3B3" class="font-bold">Sua Biblioteca</h2>
+        </div>
+        <!-- criar -> -->
+        <div class="flex gap-2">
+          <div class="flex gap-2 p-2 rounded-full" style="background: #1F1F1F;">
+            <img style="width: 24px;" src="img/plus-large-svgrepo-com.svg" alt="">
+            <h2 style="color: #B3B3B3;" class="font-bold">Criar</h2>
+          </div>
+          <img src="img/arrow_right_alt_24dp_FFFFFF_FILL0_wght200_GRAD0_opsz24.svg" alt="">
+        </div>
+
+        <!-- Arrow -->
+
+
+
+      </div>
+
+
+      <!-- Menu 2 -->
+      <div id="sub-menu" class="flex text-white font-medium content-center gap-3 py-4 px-2">
+        <div class="h3 py-2 rounded-full px-3" style="background: #1F1F1F;">Playlists</div>
+        <div class="h3 py-2 rounded-full px-3" style="background: #1F1F1F;">Álbuns</div>
+        <div class="h3 py-2 rounded-full px-3" style="background: #1F1F1F;">Artistas</div>
+      </div>
+
+      <div class="flex justify-between px-4">
+        <div class="">
+          <img src="img/search_26dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+        </div>
+        <!-- recentes -->
+        <div class="flex text-white gap-1
+        ">
+          <h3>Recentes</h3>
+          <img src="img/widgets_24dp_FFFFFF_FILL0_wght200_GRAD0_opsz24.svg" alt="">
+        </div>
+      </div>
+
+      <!-- Lists -->
+
+      <div id="card" class="py-8 grid justify-center text-white">
+        <div class="">
+          <img src="img/curtidas.jpeg" alt="">
+        </div>
+        <div class="font-medium py-2">
+          <h3>Musicas Curtidas</h3>
+        </div>
+        <div class="flex gap-2" style="color: #B3B3B3">
+          <img src="img/pin.png" class="w-5 rounded-sm" alt="">
+          <p>Playlist</p>
+          <span class="w-1 h-1 rounded self-center" style="background-color: #B3B3B3"></span>
+          <p>233 músicas</p>
+        </div>
+      </div>
+
+      <!-- ------------ -->
+
+      <div id="card" class="py-8 grid justify-center text-white">
+        <div class="w-[300px]">
+          <img src="img/list2.png" alt="">
+        </div>
+        <div class="font-medium py-2">
+          <h3>vgs list</h3>
+        </div>
+        <div class="flex gap-2" style="color: #B3B3B3">
+          <img src="img/pin.png" class="w-5 rounded-sm" alt="">
+          <p>Playlist</p>
+          <span class="w-1 h-1 rounded self-center" style="background-color: #B3B3B3"></span>
+          <p>Vitor Gagliani</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- Direita -->
+    <div class="rounded-md" style="background: #121212;">
+
+      <!-- central -->
+
+      <div id="banner" class="grid grid-cols-[225px_1fr] gap-3
+       px-4 py-4 bg-[#0A0B0D] m-3.5">
+        <div class="">
+          <div class="img">
+            <img src="img/Falando_Com_As_Favelas.jpeg" alt="" style="width: 100%;">
+          </div>
+        </div>
+
+        <div class="">
+          <div class="font-bold text-white m-0">
+            <h6>Álbum</h6>
+          </div>
+          <div class="txt font-bold text-6xl py-4  text-white">
+            <h1>Falando com as Favelas</h1>
+          </div>
+          <div class="font-medium underline  text-white">
+            <p>Memphis Depay, MC Hariel</p>
+          </div>
+          <div class=" text-white py-2 font-medium">
+            <p>Escute agora!</p>
+          </div>
+
+          <!-- btns -->
+
+          <div class="flex gap-5">
+            <p
+              class="px-6 py-2 text-black rounded-full  bg-green-500 font-bold hover:scale-105 transition delay-150 duration-300">
+              Play</p>
+            <p class="text-white px-6 py-2 border-2 border-white rounded-full hover:scale-105 transition delay-150">
+              Salvar</p>
+            <div>
+              <span class="w-1 h-1 rounded self-center inline-block bg-white"></span>
+              <span class="w-1 h-1 rounded self-center inline-block bg-white"></span>
+              <span class="w-1 h-1 rounded self-center inline-block bg-white"></span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu-2" class="px-8 top-6 relative">
+        <ul class="font-semibold flex gap-3">
+          <li class="text-black   px-3 py-1.5 bg-white rounded-full"><a class="text-center" href="">Tudo</a></li>
+          <li class="text-white  px-3 py-1.5 bg-[#27292F] rounded-full"><a class="text-center" href="">Músicas</a></li>
+          <li class="text-white px-3 py-1.5 bg-[#27292F] rounded-full"><a class="text-center" href="">Podcasts</a></li>
+        </ul>
+      </div>
+
+      <!-- minhas playlists -->
+
+      <div id="myLists" class="grid grid-cols-4 self-center gap-2 mt-12 px-8">
+
+        <div id="cards" class="w-[17rem] h-[3.5rem] bg-[#343434] rounded-md flex gap-2 items-center">
+          <div class="img">
+            <img src="img/list2.png" alt="" class="w-14  h-14 rounded-md object-cover">
+          </div>
+          <p class="text-white font-bold">vgs list</p>
+        </div>
+
+
+        <div id="cards" class="w-[17rem] h-[3.5rem] bg-[#343434] rounded-md flex gap-2 items-center">
+          <div class="img">
+            <img src="img/curtidas.jpeg" alt="" class="w-14  h-14 rounded-md object-cover">
+          </div>
+          <p class="text-white font-bold">Musicas Curtidas</p>
+        </div>
+
+        <div id="cards" class="w-[17rem] h-[3.5rem] bg-[#343434] rounded-md flex gap-2 items-center">
+          <div class="img">
+            <img src="img/list4.png" alt="" class="w-14  h-14 rounded-md object-cover">
+          </div>
+          <p class="text-white font-bold">Vitor + Sissa</p>
+        </div>
+
+        <div id="cards" class="w-[17rem] h-[3.5rem] bg-[#343434] rounded-md flex gap-2 items-center">
+          <div class="img">
+            <img src="img/list3.png" alt="" class="w-14  h-14 rounded-md object-cover">
+          </div>
+          <p class="text-white font-bold">🎸</p>
+        </div>
+
+        <div id="cards" class="w-[17rem] h-[3.5rem] bg-[#343434] rounded-md flex gap-2 items-center">
+          <div class="img">
+            <img src="img/Falando_Com_As_Favelas.jpeg" alt="" class="w-14  h-14 rounded-md object-cover">
+          </div>
+          <p class="text-white font-bold">Falando com as Favelas</p>
+        </div>
+
+        <div id="cards" class="w-[17rem] h-[3.5rem] bg-[#343434] rounded-md flex gap-2 items-center">
+          <div class="img">
+            <img src="img/Falando_Com_As_Favelas.jpeg" alt="" class="w-14  h-14 rounded-md object-cover">
+          </div>
+          <p class="text-white font-bold">Falando com as Favelas</p>
+        </div>
+
+        <div id="cards" class="w-[17rem] h-[3.5rem] bg-[#343434] rounded-md flex gap-2 items-center">
+          <div class="img">
+            <img src="img/Falando_Com_As_Favelas.jpeg" alt="" class="w-14  h-14 rounded-md object-cover">
+          </div>
+          <p class="text-white font-bold">Falando com as Favelas</p>
+        </div>
+
+        <div id="cards" class="w-[17rem] h-[3.5rem] bg-[#343434] rounded-md flex gap-2 items-center">
+          <div class="img">
+            <img src="img/Falando_Com_As_Favelas.jpeg" alt="" class="w-14  h-14 rounded-md object-cover">
+          </div>
+          <p class="text-white font-bold">Falando com as Favelas</p>
+        </div>
+
+      </div>
+
+      <!-- Feito para -->
+      <div class="px-8 mt-10 flex justify-between">
+        <h1 class="text-white font-bold text-2xl">Feito para Vitor Gagliani</h1>
+        <p class="font-semibold text-[#AEAEAE]">Mostrar tudo</p>
+      </div>
+      <!-- lists cards -->
+      <div class="cards2 px-6">
+
+        <div class="card w-[12rem] h-[15rem] gap-2 flex mt-6">
+          <div id="CARD" class="hover:bg-[#1E1E1E] p-4 rounded-md">
+
+            <div class="">
+              <img src="img/daily1.jpeg" class="w-[10rem] h-[10rem] rounded-md" alt="">
+            </div>
+            <div class="text-[#AEAEAE] font-semibold w-[10rem]">
+              <p>Travis Scott, Tyler, The Creator, Kanye West...</p>
+            </div>
+          </div>
+
+          <div id="CARD" class="hover:bg-[#1E1E1E] p-4 rounded-md">
+
+            <div class="">
+              <img src="img/daily1.jpeg" class="w-[10rem] h-[10rem] rounded-md" alt="">
+            </div>
+            <div class="text-[#AEAEAE] font-semibold w-[10rem]">
+              <p>Travis Scott, Tyler, The Creator, Kanye West...</p>
+            </div>
+          </div>
+
+          <div id="CARD" class="hover:bg-[#1E1E1E] p-4 rounded-md">
+
+            <div class="">
+              <img src="img/daily1.jpeg" class="w-[10rem] h-[10rem] rounded-md" alt="">
+            </div>
+            <div class="text-[#AEAEAE] font-semibold w-[10rem]">
+              <p>Travis Scott, Tyler, The Creator, Kanye West...</p>
+            </div>
+          </div>
+
+          <div id="CARD" class="hover:bg-[#1E1E1E] p-4 rounded-md">
+
+            <div class="">
+              <img src="img/daily1.jpeg" class="w-[10rem] h-[10rem] rounded-md" alt="">
+            </div>
+            <div class="text-[#AEAEAE] font-semibold w-[10rem]">
+              <p>Travis Scott, Tyler, The Creator, Kanye West...</p>
+            </div>
+          </div>
+
+          <div id="CARD" class="hover:bg-[#1E1E1E] p-4 rounded-md">
+
+            <div class="">
+              <img src="img/daily1.jpeg" class="w-[10rem] h-[10rem] rounded-md" alt="">
+            </div>
+            <div class="text-[#AEAEAE] font-semibold w-[10rem]">
+              <p>Travis Scott, Tyler, The Creator, Kanye West...</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+  </section>
+
+</body>
+
+</html>
